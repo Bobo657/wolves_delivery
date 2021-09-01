@@ -31,7 +31,20 @@
                         </span>
                     </td>
                     <td>{{ $delivery->created_at->format('Y-m-d') }}</td>
-                    <td> </td>
+                    <td class="text-center">
+                        <div class="dropdown custom-dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg> ... </svg>
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+                                <a class="dropdown-item" href="javascript:void(0);">Download</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Share</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 @endforeach
             </tbody>
