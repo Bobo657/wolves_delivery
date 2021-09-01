@@ -18,6 +18,8 @@
     <!--  BEGIN CUSTOM STYLE FILE  -->
     <link href="assets/css/users/user-profile.css" rel="stylesheet" type="text/css" />
     <!--  END CUSTOM STYLE FILE  -->
+    @livewireStyles
+    @livewireScripts
 </head>
 <body class="sidebar-noneoverflow">
 
@@ -64,14 +66,7 @@
                                     </div>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                                 </a>
-                                <ul class="collapse submenu list-unstyled animated fadeInUp" id="dashboard" data-parent="#topAccordion">
-                                    <li>
-                                        <a href="index.html"> Sales </a>
-                                    </li>
-                                    <li>
-                                        <a href="index2.html"> Analytics </a>
-                                    </li>
-                                </ul>
+                            
                             </li>
                         </ul>
                     </nav>
@@ -92,93 +87,6 @@
             </ul>
 
             <ul class="navbar-item flex-row nav-dropdowns">
-                <li class="nav-item dropdown language-dropdown more-dropdown">
-                    <div class="dropdown custom-dropdown-icon">
-                        <a class="dropdown-toggle btn" href="#" role="button" id="customDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/img/ca.png" class="flag-width" alt="flag">
-                            
-                        </a>
-
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="customDropdown">
-                            <div class="search-dropdown">
-                                <input type="text" class="form-control" placeholder="Search">
-                            </div>
-                            <a class="dropdown-item" data-img-value="de" data-value="de" href="javascript:void(0);"><img src="assets/img/de.png" class="flag-width" alt="flag"> German</a>
-                            <a class="dropdown-item" data-img-value="jp" data-value="jp" href="javascript:void(0);"><img src="assets/img/jp.png" class="flag-width" alt="flag"> Japanese</a>
-                            <a class="dropdown-item" data-img-value="fr" data-value="fr" href="javascript:void(0);"><img src="assets/img/fr.png" class="flag-width" alt="flag"> French</a>
-                            <a class="dropdown-item" data-img-value="ca" data-value="en" href="javascript:void(0);"><img src="assets/img/ca.png" class="flag-width" alt="flag"> English</a>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="nav-item dropdown message-dropdown">
-                    <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="messageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg><span class="badge badge-success"></span>
-                    </a>
-                    <div class="dropdown-menu p-0 position-absolute" aria-labelledby="messageDropdown">
-                        <div class="dropdown-menu-title">
-                            <h5>Messages</h5>
-                        </div>
-                        <div class="">
-                            <a class="dropdown-item unseen-msg">
-                                <div class="">
-
-                                    <div class="media">
-                                        <div class="user-img">
-                                            <div class="avatar avatar-xl">
-                                                <!-- <span class="avatar-title rounded-circle">KY</span> -->
-                                                <img src="assets/img/profile-15.jpeg" alt="admin-profile">
-                                            </div>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="">
-                                                <h5 class="usr-name">Kara Young</h5>
-                                                <p class="msg-title">ACCOUNT UPDATE</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </a>
-                            <a class="dropdown-item">
-                                <div class="">
-                                    <div class="media">
-                                        <div class="user-img">
-                                            <div class="avatar avatar-xl">
-                                                <span class="avatar-title rounded-circle">DA</span>
-                                            </div>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="">
-                                                <h5 class="usr-name">Daisy Anderson</h5>
-                                                <p class="msg-title">ACCOUNT UPDATE</p>
-                                            </div>
-                                        </div>
-                                    </div>                                    
-                                </div>
-                            </a>
-                            <a class="dropdown-item unseen-msg">
-                                <div class="">
-
-                                    <div class="media">
-                                        <div class="user-img">
-                                            <div class="avatar avatar-xl">
-                                                <!-- <span class="avatar-title rounded-circle">OG</span> -->
-                                                <img src="assets/img/profile-3.jpeg" alt="admin-profile">
-                                            </div>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="">
-                                                <h5 class="usr-name">Oscar Garner</h5>
-                                                <p class="msg-title">ACCOUNT UPDATE</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </li>
 
                 <li class="nav-item dropdown notification-dropdown">
                     <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="notificationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -307,60 +215,15 @@
 
                 <div class="row layout-spacing">
                     <!-- Content -->
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
-                        <div class="table-responsive">
-                            <table class="table mb-4">
-                            <caption>List of all deliveries</caption>
-                            <thead>
-                                    <tr>
-                                        <th class="text-center">#</th>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th class="">Status</th>
-                                        <th>Register</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center">1</td>
-                                        <td class="text-primary">Shaun Park</td>
-                                        <td>johndoe@yahoo.com</td>
-                                        <td class=""><span class=" shadow-none badge outline-badge-primary">Complete</span></td>
-                                        <td>5 min ago</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">2</td>
-                                        <td class="text-primary">Andy King</td>
-                                        <td>andyking@gmail.com</td>
-                                        <td class=""><span class="badge outline-badge-secondary shadow-none">Pending</span></td>
-                                        <td>10 min ago</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">3</td>
-                                        <td class="text-primary">Mary McDonald</td>
-                                        <td>lisadoe@live.com</td>
-                                        <td class=""><span class="badge outline-badge-info shadow-none">In Progress</span></td>
-                                        <td>1 hour ago</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">4</td>
-                                        <td class="text-primary">Vincent Carpenter</td>
-                                        <td>vinnyc@outlook.com</td>
-                                        <td class=""><span class="badge outline-badge-danger shadow-none">Cancel</span></td>
-                                        <td>1 day ago</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                    {{ $slot }}
+                    
                 </div>
             </div>
             <div class="footer-wrapper">
                 <div class="footer-section f-section-1">
-                    <p class="">Copyright © {{ date('Y')}} <a target="_blank" href="https://designreset.com">{{ config('app.name')}}</a>, All rights reserved.</p>
-                </div>
-                <div class="footer-section f-section-2">
-                    <p class="">Coded with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></p>
+                    <p class="">
+                        Copyright © {{ date('Y')}} <a target="_blank" href="https://designreset.com">{{ config('app.name')}}</a>, All rights reserved.
+                    </p>
                 </div>
             </div>
         </div>

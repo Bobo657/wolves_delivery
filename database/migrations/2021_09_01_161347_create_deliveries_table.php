@@ -17,7 +17,7 @@ class CreateDeliveriesTable extends Migration
             $table->id();
             $table->string('sender');
             $table->string('email');
-            $table->string('address');
+            $table->string('phone');
             $table->string('image')->nullable();
             $table->string('status');
             $table->string('location');
