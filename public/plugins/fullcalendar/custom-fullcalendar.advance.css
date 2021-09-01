@@ -1,3 +1,6 @@
+.main-container {
+    min-height: auto;
+}
 .layout-px-spacing {
     min-height: auto!important;
 }
@@ -11,7 +14,7 @@
     height: calc(100vh - 312px);
 }
 #calendar {
-    height: calc(100vh - 274px);
+    height: calc(100vh - 321px);
 }
 .popover {
     border: none;
@@ -137,10 +140,10 @@ a.bg-primary:hover, a.bg-success:hover, a.bg-warning:hover, a.bg-danger:hover {
     background-color: inherit!important;
     border-width: 2px!important;
 }
-.fc-scroller { height: 100%!important;  position: relative; height: calc(100vh - 335px)!important; }
+.fc-scroller { height: 100%!important;  position: relative; height: calc(100vh - 384px)!important; }
 .fc-scroller.fc-time-grid-container { height: calc(100vh - 420px)!important; }
-.fc-agendaWeek-view .fc-scroller.fc-time-grid-container { height: calc(100vh - 380px)!important; }
-.fc-agendaDay-view .fc-scroller.fc-time-grid-container { height: calc(100vh - 380px)!important; }
+.fc-agendaWeek-view .fc-scroller.fc-time-grid-container { height: calc(100vh - 430px)!important; }
+.fc-agendaDay-view .fc-scroller.fc-time-grid-container { height: calc(100vh - 430px)!important; }
 /*
     Modal
 */

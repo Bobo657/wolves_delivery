@@ -1,3 +1,6 @@
+.main-container {
+    min-height: auto;
+}
 .layout-px-spacing {
     min-height: auto!important;
 }
@@ -62,16 +65,9 @@
     position: relative;
     display: flex;
     border-radius: 6px;
-    background: #fff;
-    box-shadow: rgb(145 158 171 / 24%) 0px 0px 2px 0px, rgb(145 158 171 / 24%) 0px 16px 32px -4px;
-}
-.mail-box-container {
-    position: relative;
-    display: flex;
-    border-radius: 6px;
     background-color: #fff;
     box-shadow: rgb(145 158 171 / 24%) 0px 0px 2px 0px, rgb(145 158 171 / 24%) 0px 16px 32px -4px;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 197px);
     margin-bottom: 10px;
 }
 .mail-box-container .avatar-sm {
@@ -309,6 +305,7 @@
     box-shadow: 0px 5px 15px 1px rgba(113, 106, 202, 0.2);
     padding: 4px 16px;
 }
+
 /*
 =====================
     Mailbox Inbox
@@ -403,7 +400,7 @@
     vertical-align: middle;
     width: 20px;
     height: 20px;
-    fill: #e0e6ed;
+    fill: rgb(238, 246, 255);
 }
 .mailbox-inbox .action-center .nav-link.label-group svg { margin-right: 12px; }
 .mailbox-inbox .action-center svg:not(:last-child) { margin-right: 12px; }
@@ -423,7 +420,7 @@
     margin: auto;
     width: 100%;
     overflow: auto;
-    height: calc(100vh - 255px);
+    height: calc(100vh - 302px);
 }
 .mailbox-inbox .mail-item[id*="unread-"] div.mail-item-heading {}
 .mailbox-inbox .mail-item[id*="unread-"] div.mail-item-heading .mail-item-inner .f-body .mail-title {
@@ -625,7 +622,7 @@
 }
 .mailbox-inbox .collapse {
     position: relative;
-    height: calc(100vh - 203px);
+    height: calc(100vh - 251px);
 }
 .mailbox-inbox .mail-content-container {
     position: relative;
@@ -899,16 +896,16 @@
     }
 }
 
-.animated {
+.mail-box-container .animated {
     animation-duration: 1s;
     animation-fill-mode: both;
     -webkit-animation-duration: 1s;
     -webkit-animation-fill-mode: both
 }
-.animatedFadeInUp {
+.mail-box-container .animatedFadeInUp {
     opacity: 0
 }
-.fadeInUp {
+.mail-box-container .fadeInUp {
     opacity: 0;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
@@ -923,7 +920,7 @@
         max-width: 170px;
     }
     .main-container:not(.sidebar-closed) .mailbox-inbox .mail-item div.mail-item-heading .attachments {
-        width: calc(100vw - 940px);
+        width: calc(100vw - 725px);
     }
 }
 @media (max-width: 991px) {
@@ -959,8 +956,8 @@
         padding: 14px 14px;
     }
     .mailbox-inbox .mail-item div.mail-item-heading:hover {
-        background: #ebedf2;
-        border: 1px solid rgb(27, 85, 226)!important;
+        background: transparent;
+        border: none!important;
     }
     .mailbox-inbox .mail-item div.mail-item-heading .mail-item-inner {
         padding-left: 14px;

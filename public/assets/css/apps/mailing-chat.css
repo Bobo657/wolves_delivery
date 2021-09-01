@@ -1,3 +1,6 @@
+.main-container {
+    min-height: auto;
+}
 .layout-px-spacing {
     min-height: auto!important;
 }
@@ -11,10 +14,11 @@
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
 }
-.chat-system { display: flex; box-shadow: rgb(145 158 171 / 24%) 0px 0px 2px 0px, rgb(145 158 171 / 24%) 0px 16px 32px -4px;
-    height: calc(100vh - 150px);
+.chat-system { display: flex; 
+    height: calc(100vh - 197px);
     margin-bottom: 10px;
     border-radius: 6px;
+    box-shadow: rgb(145 158 171 / 24%) 0px 0px 2px 0px, rgb(145 158 171 / 24%) 0px 16px 32px -4px;
 }
 .chat-system .hamburger { display: none; }
  .chat-system .user-list-box {
@@ -58,7 +62,7 @@
     margin: auto;
     width: 100%;
     overflow: auto;
-    height: calc(100vh - 223px);
+    height: calc(100vh - 270px);
 }
 .chat-system .user-list-box .people .person {
     position: relative;
@@ -121,7 +125,7 @@
     background-image: url(../../img/bg.png);
     border-bottom-right-radius: 6px;
     border-top-right-radius: 6px;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 197px);
 }
 .chat-system .chat-box .chat-not-selected {
     display: flex;
@@ -149,9 +153,10 @@
     z-index: 4;
 }
 .chat-system .chat-box .overlay-phone-call {
+    display: none;
     position: absolute;
     width: 100%;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 197px);
     z-index: -1;
     opacity: 0;
     transition: all 0.4s ease-in-out;
@@ -247,9 +252,10 @@
     z-index: 4;
 }
 .chat-system .chat-box .overlay-video-call {
+    display: none;
     position: absolute;
     width: 100%;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 197px);
     z-index: -1;
     opacity: 0;
     transition: all 0.4s ease-in-out;

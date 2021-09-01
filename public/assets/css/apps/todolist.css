@@ -1,3 +1,6 @@
+.main-container {
+    min-height: auto;
+}
 .layout-px-spacing {
     min-height: auto!important;
 }
@@ -42,8 +45,8 @@
     border-right: 1px solid #e0e6ed;
 }
 .tab-title svg.feather-clipboard {
-    color: #506690;
-    fill: rgba(80, 102, 144, 0.239);
+    color: #4361ee;
+    fill: rgba(27, 85, 226, 0.23921568627450981);
     margin-bottom: 13px;
 }
 .tab-title h5 {
@@ -57,7 +60,7 @@
     position: absolute;
     font-size: 14px;
     padding: 9px 20px;
-    border: none;
+    border: none; 
     color: #fff;
     bottom: 32px;
     left: 17%;
@@ -177,7 +180,7 @@
     margin: auto;
     width: 100%;
     overflow: auto;
-    height: calc(100vh - 195px);
+    height: calc(100vh - 242px);
 }
 .todo-inbox .todo-item {
     cursor: pointer;
@@ -214,7 +217,7 @@
     overflow: hidden!important;
     text-overflow: ellipsis!important;
     white-space: nowrap!important;
-    max-width: calc(100vw - 730px);
+    max-width: calc(100vw - 760px);
 }
 .todo-inbox .todo-item .todo-item-inner:hover .todo-text {
     -webkit-transform: translateY(0) scale(1.01);
@@ -223,7 +226,7 @@
 .todo-inbox .todo-item .todo-item-inner p.meta-date {
     margin-bottom: 0;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
     color: #61b6cd;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;

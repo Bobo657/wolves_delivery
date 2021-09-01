@@ -1,13 +1,3 @@
-#content:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    /* background: rgba(136, 142, 168, 0.21176470588235294); */
-    background: #ebedf2;
-    width: 100%;
-    height: 183px;
-}
 /*----------Theme checkbox---------*/
 
 .new-control {
@@ -31,19 +21,18 @@
 .filtered-list-search form > div svg {
     position: absolute;
     right: 11px;
-    color: #888ea8;
+    color: #e3e4eb;
     height: 36px;
     width: 19px;
     top: 4px;
-    stroke-width: 1.4;
 }
 .filtered-list-search form input {
     padding: 6px 27px 6px 15px;
     color: #d3d3d3;
     border: none;
-        box-shadow: rgb(145 158 171 / 24%) 0px 0px 2px 0px, rgb(145 158 171 / 24%) 0px 16px 32px -4px;
     width: 100%!important;
     background-color: #fff;
+    box-shadow: rgb(145 158 171 / 24%) 0px 0px 2px 0px, rgb(145 158 171 / 24%) 0px 16px 32px -4px;
 }
 .filtered-list-search form input:focus {
   border-color: #d3d3d3;
@@ -69,14 +58,10 @@
     border-radius: 5px;
     cursor: pointer;
     color: #515365;
-        box-shadow: rgb(145 158 171 / 24%) 0px 0px 2px 0px, rgb(145 158 171 / 24%) 0px 16px 32px -4px;
     width: 43px;
     height: 41px;
-    color: #888ea8;
-    /* margin-right: 18px; */
-    stroke-width: 1px;
-    fill: rgba(172, 176, 195, 0.35);
-    transition: all .2s ease-in-out;
+    fill: rgba(0, 23, 55, 0.08);
+    box-shadow: rgb(145 158 171 / 24%) 0px 0px 2px 0px, rgb(145 158 171 / 24%) 0px 16px 32px -4px;
 }
 .searchable-container .switch .view-list {
     padding: 10px;
@@ -84,14 +69,10 @@
     border-radius: 5px;
     cursor: pointer;
     color: #515365;
-        box-shadow: rgb(145 158 171 / 24%) 0px 0px 2px 0px, rgb(145 158 171 / 24%) 0px 16px 32px -4px;
     width: 43px;
     height: 41px;
     fill: rgba(0, 23, 55, 0.08);
-    /* margin-right: 14px; */
-    /* stroke-width: 1px; */
-    fill: rgba(172, 176, 195, 0.35);
-    transition: all .2s ease-in-out;
+    box-shadow: rgb(145 158 171 / 24%) 0px 0px 2px 0px, rgb(145 158 171 / 24%) 0px 16px 32px -4px;
 }
 .searchable-container #btn-add-contact {
     padding: 9px;
@@ -99,14 +80,11 @@
     border-radius: 5px;
     cursor: pointer;
     margin-right: 35px;
-        box-shadow: rgb(145 158 171 / 24%) 0px 0px 2px 0px, rgb(145 158 171 / 24%) 0px 16px 32px -4px;
     width: 43px;
     height: 41px;
     color: #4361ee;
     fill: rgba(27, 85, 226, 0.23921568627450981);
-    /* margin-right: 18px; */
-    stroke-width: 1px;
-    transition: all .2s ease-in-out;
+    box-shadow: rgb(145 158 171 / 24%) 0px 0px 2px 0px, rgb(145 158 171 / 24%) 0px 16px 32px -4px;
 }
 .searchable-container #btn-add-contact:hover {
     color: #515365;
@@ -269,11 +247,11 @@
     transition: all 0.35s ease;
     box-shadow: rgb(145 158 171 / 24%) 0px 0px 2px 0px, rgb(145 158 171 / 24%) 0px 16px 32px -4px;
 }
-.searchable-container .searchable-items.list .items .item-content:hover .user-meta-info .user-name, .searchable-container .searchable-items.list .items .item-content:hover .user-email p, .searchable-container .searchable-items.list .items .item-content:hover .user-location p, .searchable-container .searchable-items.list .items .item-content:hover .user-phone p {
-  color: #2196f3;
-}
 .searchable-container .searchable-items.list .items .user-profile {
   display: flex;
+}
+.searchable-container .searchable-items.list .items .item-content:hover .user-meta-info .user-name, .searchable-container .searchable-items.list .items .item-content:hover .user-email p, .searchable-container .searchable-items.list .items .item-content:hover .user-location p, .searchable-container .searchable-items.list .items .item-content:hover .user-phone p {
+  color: #2196f3;
 }
 .searchable-container .searchable-items.list .items .user-profile img {
     width: 43px;
@@ -381,10 +359,8 @@
 .searchable-container .searchable-items.grid .items .item-content {
   background-color: #fff;
   padding: 13px 18px;
-      box-shadow: rgb(145 158 171 / 24%) 0px 0px 2px 0px, rgb(145 158 171 / 24%) 0px 16px 32px -4px;
   border-radius: 6px;
-  border: 1px solid #e0e6ed;
-  box-shadow: 0 0 40px 0 rgba(94,92,154,.06);
+  box-shadow: rgb(145 158 171 / 24%) 0px 0px 2px 0px, rgb(145 158 171 / 24%) 0px 16px 32px -4px;
 }
 .searchable-container .searchable-items.grid .items.items-header-section {
   display: none;
