@@ -10,9 +10,9 @@
                     <th>Phone</th>
                     <th>From</th>
                     <th>To</th>
-                    <th>Description</th>
                     <th class="">Status</th>
                     <th>Date</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -24,13 +24,14 @@
                     <td>{{ $delivery->phone }}</td>
                     <td>{{ $delivery->location }}</td>
                     <td>{{ $delivery->destination }}</td>
-                    <td>{{ $delivery->description }}</td>
+                    
                     <td class="">
                         <span class="shadow-none badge outline-badge-primary">
                         {{ $delivery->status }}
                         </span>
                     </td>
                     <td>{{ $delivery->created_at->format('Y-m-d') }}</td>
+                    <td> </td>
                 </tr>
                 @endforeach
             </tbody>
