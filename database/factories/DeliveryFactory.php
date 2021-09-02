@@ -29,7 +29,7 @@ class DeliveryFactory extends Factory
             'location' => $this->faker->streetAddress,
             'destination' => $this->faker->streetAddress,
             'tracking_number' => $this->faker->creditCardNumber,
-            'status' => $this->faker->randomElement($array = ['cancelled', 'delivered', 'pending', 'in transit']),
+            'status' => $this->faker->randomElement($array = ['onhold', 'pending', 'in transit']),
             'created_at' => $this->faker->dateTimeThisYear($max = 'now', $timezone = null)
         ];
     }

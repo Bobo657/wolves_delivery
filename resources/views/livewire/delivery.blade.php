@@ -26,7 +26,7 @@
                     <td>{{ $delivery->destination }}</td>
                     
                     <td class="">
-                        <span class="shadow-none badge outline-badge-primary">
+                        <span class="shadow-none badge outline-badge-{{ $delivery->status_color}}">
                         {{ $delivery->status }}
                         </span>
                     </td>
@@ -41,19 +41,20 @@
                             </a>
 
                             <div class="dropdown-menu left" aria-labelledby="pendingTask" style="will-change: transform;">
-                                <a class="dropdown-item" href="javascript:void(0);">
-                                   In Transit
+                                <a class="dropdown-item" href="javascript:void(0);" wire:click.prevent="changeStatus({{$delivery->id}}, 'in transit')">
+                                   
+                                In Transit
                                 </a>
-                                <a class="dropdown-item" href="javascript:void(0);">
+                                <a class="dropdown-item" href="javascript:void(0);" wire:click.prevent="changeStatus({{$delivery->id}}, 'onhold')">
                                     Onhold
                                 </a>
-                                <a class="dropdown-item" href="javascript:void(0);">
+                                <a class="dropdown-item" href="javascript:void(0);" wire:click.prevent="changeStatus({{$delivery->id}}, 'pending')">
                                     Pending
                                 </a>
-                                <a class="dropdown-item" href="javascript:void(0);">
-                                    View 
+                                <a class="dropdown-item" href="javascript:void(0);" wire:click.prevent="$emitTo('edit-delivery', 'get_delivery', '{{$delivery->id}}')">
+                                    Edit 
                                 </a>
-                                <a class="dropdown-item" href="javascript:void(0);">
+                                <a class="dropdown-item" href="javascript:void(0);" wire:click.prevent="delete({{ $delivery->id }})">
                                     Delete
                                 </a>
                             </div>
@@ -64,4 +65,7 @@
             </tbody>
         </table>
     </div>
+    
+    @livewire('edit-delivery')
+    @livewire('add-delivery')
 </div>

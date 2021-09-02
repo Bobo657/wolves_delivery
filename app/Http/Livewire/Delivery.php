@@ -28,9 +28,13 @@ class Delivery extends Component
         $this->no_of_rows = $no_of_rows;
     }
 
+    public function changeStatus(Order $order, $status){
+        $order->status = $status;
+        $order->save();
+    }
+
     public function delete(Order $order){
-        $delivery->delete();
-        $this->emit('notify', 'order has been deleted');
+        $order->delete();
     }
   
     public function render()
