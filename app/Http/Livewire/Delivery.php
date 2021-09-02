@@ -42,17 +42,12 @@ class Delivery extends Component
         $deliveries = Order::query();
 
     	$deliveries->when(!empty($this->search), function ($q) {
-    		return $q->where('name', 'LIKE', "%{$this->search}%")
-    				->orWhere('package', 'LIKE', "%{$this->search}%")
-    				->orWhere('state', 'LIKE', "%{$this->search}%")
-    				->orWhere('address', 'LIKE', "%{$this->search}%")
-    				->orWhere('alternate_phone', 'LIKE', "%{$this->search}%")
-    				->orWhere('phone', 'LIKE', "%{$this->search}%");
+    		return $q->where('sender', 'LIKE', "%{$this->search}%")
+    				->orWhere('email', 'LIKE', "%{$this->search}%")
+    				->orWhere('status', 'LIKE', "%{$this->search}%")
+    				->orWhere('phone', 'LIKE', "%{$this->search}%")
+    				->orWhere('tracking_number', 'LIKE', "%{$this->search}%");
     				 
-		})->when(!empty($this->start_date), function ($q) {
-    		return $q->where('created_at', '>=', $this->start_date);
-		})->when(!empty($this->end_date), function ($q) {
-    		return $q->where('created_at', '<=', $this->end_date);
 		});
         
         return view('livewire.delivery', [

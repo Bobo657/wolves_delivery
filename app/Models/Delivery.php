@@ -34,4 +34,14 @@ class Delivery extends Model
                 break;
         }
     }
+
+     public static function boot() {
+        parent::boot();
+
+        static::creating (function($delivery){   
+            $delivery->tracking_number = random_int(111, 999).time(); 
+            
+            //Mail::to($user->email)->send(new AccountActivationEmail($user));
+        });
+    }
 }

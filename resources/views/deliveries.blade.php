@@ -124,28 +124,11 @@
 
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
-            <div class="layout-px-spacing">
-
-                <div class="page-header">
-                    <nav class="breadcrumb-one" aria-label="breadcrumb">
-                        <div class="title">
-                            <h3>Admin Dashboard</h3>
-                        </div>
-                        <ol class="breadcrumb">
-                          
-                            <li class="breadcrumb-item active"  aria-current="page"><a href="javascript:void(0);">Deliveries</a></li>
-                        </ol>
-                    </nav>
-
-                    
-                </div>
-
-                <div class="row layout-spacing">
+            
                     <!-- Content -->
                     {{ $slot }}
                     
-                </div>
-            </div>
+                
             <div class="footer-wrapper">
                 <div class="footer-section f-section-1">
                     <p class="">
