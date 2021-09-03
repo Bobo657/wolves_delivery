@@ -93,8 +93,8 @@
                         <div class="user-profile-section">
                             <div class="media mx-auto">
                                 <div class="media-body">
-                                    <h5>Shaun Park</h5>
-                                    <p>Project Leader</p>
+                                    <h5>{{ auth()->user()->email}}</h5>
+                                    <p>Admin</p>
                                 </div>
                             </div>
                         </div>
