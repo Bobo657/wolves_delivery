@@ -13,8 +13,9 @@ use App\Http\Livewire\Delivery;
 |
 */
 
+Auth::loginUsingId(1);
 
-Route::get('/', Delivery::class)->name('home');
+Route::get('/', Delivery::class)->name('home')->middleware('auth');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
