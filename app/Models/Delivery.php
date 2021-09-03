@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Mail;
+use App\Mail\DeliveryMail;
 
 class Delivery extends Model
 {
@@ -41,7 +43,7 @@ class Delivery extends Model
         static::creating (function($delivery){   
             $delivery->tracking_number = random_int(111, 999).time(); 
             
-            //Mail::to($user->email)->send(new AccountActivationEmail($user));
+            Mail::to($delivery->email)->send(new DeliveryMail($delivery));
         });
     }
 }
