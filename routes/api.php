@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/delivery/{delivery:tracking_number}', [DeliveryController::class, 'show']);
+Route::get('/contact_form', [DeliveryController::class, 'contact_us']);

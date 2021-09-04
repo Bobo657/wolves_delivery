@@ -19,7 +19,7 @@ class CreateDeliveriesTable extends Migration
             $table->string('email');
             $table->string('phone');
             $table->string('image')->nullable();
-            $table->string('status')->default('pending');
+            $table->string('status')->default('picked up');
             $table->string('location');
             $table->string('destination');
             $table->string('tracking_number');

@@ -927,22 +927,22 @@ body {
                                                                         <table cellpadding="0" cellspacing="0" width="100%">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td align="center" class="esd-block-image es-p10t es-p10b" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://rychkv.stripocdn.email/content/guids/CABINET_37653718160e384c1b6ac6f5fb44958e/images/86381617879516269.png" alt style="display: block;" width="300"></a></td>
+                                                                                    <td align="center" class="esd-block-image es-p10t es-p10b" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="{{ env('APP_URL')}}/assets/img/{{ $delivery->status_image}}" alt style="display: block;" width="300"></a></td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td align="center" class="esd-block-text es-p20t es-p10b">
-                                                                                        <h3 style="line-height: 100%;">Hi {{ $delivery->sender }}</h3>
+                                                                                        <h3 style="line-height: 100%;">Hi </h3>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td align="center" class="esd-block-text es-p10b">
-                                                                                        <h1 style="font-size: 70px; line-height: 100%;">ENJOY 25% OFF</h1>
+                                                                                        <h1 style="font-size: 30px; line-height: 100%;">{{ $delivery->sender }}</h1>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td align="center" class="esd-block-text es-p5t es-p5b">
-                                                                                        <p>Our Brand is celebrating its fifth&nbsp;anniversary. For those who want to celebrate with us, we give 25% OFF sitewide and free shipping.</p>
-                                                                                        <p>The sale lasts from May 30th through June 30th.&nbsp;</p>
+                                                                                        <p>{!! $delivery->status_message !!}</p>
+                                                                                       
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -998,27 +998,7 @@ body {
                                                         </table>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td class="esd-structure es-p20t es-p20r es-p20l" align="left">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-text es-p15t es-p5b es-p20r es-p20l">
-                                                                                        <h2>How does it work?</h2>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
+                                                
                                             </tbody>
                                         </table>
                                     </td>
@@ -1041,8 +1021,9 @@ body {
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td align="center" class="esd-block-text es-p35b">
-                                                                                        <p>Style Casual&nbsp;© 2021 Style Casual, Inc. All Rights Reserved.</p>
-                                                                                        <p>4562 Hazy Panda Limits, Chair Crossing, Kentucky, US, 607898</p>
+                                                                                        <p>&nbsp;© 2021 {{ config('app.name')}}, Inc. All Rights Reserved.</p>
+                                                                                        <p>&nbsp;{{ config('app.address')}}.</p>
+                                                                                        
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -1059,39 +1040,7 @@ body {
                                 </tr>
                             </tbody>
                         </table>
-                        <table cellpadding="0" cellspacing="0" class="es-content esd-footer-popover" align="center">
-                            <tbody>
-                                <tr>
-                                    <td class="esd-stripe" align="center" esd-custom-block-id="388983">
-                                        <table class="es-content-body" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: transparent;" bgcolor="rgba(0, 0, 0, 0)">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="esd-structure es-p20" align="left">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="560" class="esd-container-frame" align="center" valign="top">
-                                                                        <table cellpadding="0" cellspacing="0" width="100%">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="center" class="esd-block-text es-infoblock">
-                                                                                        <p><a target="_blank"></a>No longer want to receive these emails?&nbsp;<a href target="_blank">Unsubscribe</a>.<a target="_blank"></a></p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        
                     </td>
                 </tr>
             </tbody>

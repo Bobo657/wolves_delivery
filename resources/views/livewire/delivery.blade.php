@@ -65,14 +65,14 @@
 
                                     <div class="dropdown-menu left" aria-labelledby="pendingTask" style="will-change: transform;">
                                         <a class="dropdown-item" href="javascript:void(0);" wire:click.prevent="changeStatus({{$delivery->id}}, 'in transit')">
-                                           
-                                        In Transit
+            
+                                            In Transit
                                         </a>
                                         <a class="dropdown-item" href="javascript:void(0);" wire:click.prevent="changeStatus({{$delivery->id}}, 'onhold')">
                                             Onhold
                                         </a>
-                                        <a class="dropdown-item" href="javascript:void(0);" wire:click.prevent="changeStatus({{$delivery->id}}, 'pending')">
-                                            Pending
+                                        <a class="dropdown-item" href="javascript:void(0);" wire:click.prevent="changeStatus({{$delivery->id}}, 'delivered')">
+                                            Delivered
                                         </a>
                                         <a class="dropdown-item" href="javascript:void(0);" wire:click.prevent="$emitTo('edit-delivery', 'get_delivery', '{{$delivery->id}}')">
                                             Edit 

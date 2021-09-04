@@ -22,4 +22,4 @@ Route::get('/', Delivery::class)
 Route::middleware(['auth:sanctum', 'verified'])
 ->get('/dashboard', Delivery::class)->name('dashboard');
 
-Route::view('/test', 'delivery_notification');
+Route::view('/test', 'delivery_notification', ['delivery' => App\Models\Delivery::all()->first()]);
