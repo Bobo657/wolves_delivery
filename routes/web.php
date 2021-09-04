@@ -13,7 +13,7 @@ use App\Http\Livewire\Delivery;
 |
 */
 
-//Auth::loginUsingId(1);
+Auth::loginUsingId(1);
 
 Route::get('/', Delivery::class)
 ->name('home')
