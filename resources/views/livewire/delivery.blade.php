@@ -32,6 +32,7 @@
                             <th>Phone</th>
                             <th>From</th>
                             <th>To</th>
+                            <th>Location</th>
                             <th class="">Status</th>
                             <th>Date</th>
                             <th></th>
@@ -46,7 +47,7 @@
                             <td>{{ $delivery->phone }}</td>
                             <td>{{ $delivery->location }}</td>
                             <td>{{ $delivery->destination }}</td>
-                            
+                            <td>{{ $delivery->current_location }}</td>
                             <td class="">
                                 <span class="shadow-none badge outline-badge-{{ $delivery->status_color}}">
                                 {{ $delivery->status }}

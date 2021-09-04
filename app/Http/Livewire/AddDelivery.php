@@ -14,7 +14,7 @@ class AddDelivery extends Component
     public  $phone;
     public  $destination;
     public  $location;
-    public  $description;
+    public  $current_location;
 
     public function update()
     {
@@ -23,7 +23,7 @@ class AddDelivery extends Component
 		            'sender' => 'required',
                     'location' => 'required',
 		            'destination' => 'required',
-                    'description' => 'required',
+                    'current_location' => 'required',
 		            'email' => 'required'
 		        ]);
 

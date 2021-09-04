@@ -25,7 +25,7 @@ class DeliveryFactory extends Factory
             'sender' => $this->faker->name,
             'email' => $this->faker->unique()->safeEmail,
             'phone' => $this->faker->phoneNumber,
-            'description' => $this->faker->sentence($nbWords = 6, $variableNbWords = true),
+            'current_location' => $this->faker->streetAddress,
             'location' => $this->faker->streetAddress,
             'destination' => $this->faker->streetAddress,
             'tracking_number' => $this->faker->creditCardNumber,

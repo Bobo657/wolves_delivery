@@ -18,7 +18,7 @@ class Delivery extends Model
         'location',
         'destination',
         'tracking_number',
-        'description'
+        'current_location'
     ];
 
 

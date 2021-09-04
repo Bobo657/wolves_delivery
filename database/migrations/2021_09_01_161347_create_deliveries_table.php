@@ -23,7 +23,7 @@ class CreateDeliveriesTable extends Migration
             $table->string('location');
             $table->string('destination');
             $table->string('tracking_number');
-            $table->string('description');
+            $table->string('current_location');
             $table->timestamps();
         });
     }

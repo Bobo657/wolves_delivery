@@ -14,7 +14,7 @@ class EditDelivery extends Component
     public  $phone;
     public  $destination;
     public  $location;
-    public  $description;
+    public  $current_location;
 
     public function get_delivery(Order $delivery)
     {	
@@ -22,7 +22,7 @@ class EditDelivery extends Component
         $this->resetErrorBag();
 
     	$this->delivery = $delivery;
-    	$this->description = $delivery->description;
+    	$this->current_location = $delivery->current_location;
         $this->sender  = $delivery->sender;
     	$this->email = $delivery->email;
     	$this->phone = $delivery->phone;
@@ -38,7 +38,7 @@ class EditDelivery extends Component
 		            'sender' => 'required',
                     'location' => 'required',
 		            'destination' => 'required',
-                    'description' => 'required',
+                    'current_location' => 'required',
 		            'email' => 'required'
 		        ]);
 

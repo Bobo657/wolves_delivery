@@ -32,8 +32,8 @@
                         <input type="text" wire:model.defer="destination" class="form-control">
                     </div>
                     <div class="form-group mb-4">
-                        <label for="inputAddress2">Description</label>
-                        <input type="text" wire:model.defer="description" class="form-control">
+                        <label for="inputAddress2">Current Location</label>
+                        <input type="text" wire:model.defer="current_location" class="form-control">
                     </div> 
                 </form>
             </div>
