@@ -6,19 +6,17 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
+use App\Models\Delivery;
 
 class DeliveryMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    /**
-     * Create a new message instance.
-     *
-     * @return void
-     */
-    public function __construct()
+    public $delivery;
+
+    public function __construct(Delivery $delivery)
     {
-        //
+        $this->delivery= $delivery;
     }
 
     /**
@@ -28,6 +26,6 @@ class DeliveryMail extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->view('delivery_notification');
     }
 }

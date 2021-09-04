@@ -931,7 +931,7 @@ body {
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td align="center" class="esd-block-text es-p20t es-p10b">
-                                                                                        <h3 style="line-height: 100%;">OUR BEST SELLERS!</h3>
+                                                                                        <h3 style="line-height: 100%;">Hi {{ $delivery->sender }}</h3>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -963,12 +963,12 @@ body {
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td align="center" class="esd-block-text es-p20t es-p20r es-p20l">
-                                                                                        <h2>Your promo code</h2>
+                                                                                        <h2>Your tracking code</h2>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td align="center" class="esd-block-text es-p10t es-p20b es-p20r es-p20l" esd-links-underline="none">
-                                                                                        <h1><strong><a target="_blank" style="text-decoration: none;">FGH-123-VBN</a></strong></h1>
+                                                                                        <h1><strong><a target="_blank" style="text-decoration: none;">{{ $delivery->tracking_number}}</a></strong></h1>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -988,7 +988,7 @@ body {
                                                                         <table cellpadding="0" cellspacing="0" width="100%" style="border-radius: 5px; border-collapse: separate;">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td align="center" class="esd-block-button es-p10t es-p10b"><span class="es-button-border" style="border-radius: 6px;"><a href class="es-button" target="_blank" style="border-left-width: 30px; border-right-width: 30px; border-radius: 6px;">GO SHOPPING</a></span></td>
+                                                                                    <td align="center" class="esd-block-button es-p10t es-p10b"><span class="es-button-border" style="border-radius: 6px;"><a href class="es-button" target="_blank" style="border-left-width: 30px; border-right-width: 30px; border-radius: 6px;">TRACK YOUR PARCEL</a></span></td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
