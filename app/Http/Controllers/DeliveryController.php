@@ -10,6 +10,6 @@ class DeliveryController extends Controller
    
     public function show(Delivery $delivery)
     {
-        return $delivery;
+        return response()->json($delivery);
     }
 }

@@ -43,7 +43,7 @@ class Delivery extends Model
         static::creating (function($delivery){   
             $delivery->tracking_number = random_int(111, 999).time(); 
             
-            Mail::to($delivery->email)->send(new DeliveryMail($delivery));
+            //Mail::to($delivery->email)->send(new DeliveryMail($delivery));
         });
     }
 }
