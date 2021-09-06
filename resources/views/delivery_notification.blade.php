@@ -953,6 +953,7 @@ body {
                                                         </table>
                                                     </td>
                                                 </tr>
+                                                @if($delivery->show_number)
                                                 <tr>
                                                     <td class="esd-structure es-p10t es-p10b es-p20r es-p20l" align="left">
                                                         <table cellpadding="0" cellspacing="0" width="100%">
@@ -998,7 +999,7 @@ body {
                                                         </table>
                                                     </td>
                                                 </tr>
-                                                
+                                                @endif
                                             </tbody>
                                         </table>
                                     </td>
