@@ -13,7 +13,11 @@ use App\Http\Livewire\Delivery;
 |
 */
 
+<<<<<<< HEAD
 //Auth::loginUsingId(1);
+=======
+// Auth::loginUsingId(1);
+>>>>>>> 6559f023fb70f593eb97f68242096e8ea3b2acdd
 
 Route::get('/', Delivery::class)
 ->name('home')
@@ -22,4 +26,8 @@ Route::get('/', Delivery::class)
 Route::middleware(['auth:sanctum', 'verified'])
 ->get('/dashboard', Delivery::class)->name('dashboard');
 
+<<<<<<< HEAD
 //Route::view('/test', 'delivery_notification', ['delivery' => App\Models\Delivery::all()->first()]);
+=======
+Route::view('/test', 'delivery_notification', ['delivery' => App\Models\Delivery::find(3)]);
+>>>>>>> 6559f023fb70f593eb97f68242096e8ea3b2acdd

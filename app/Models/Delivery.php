@@ -58,6 +58,24 @@ class Delivery extends Model
         }
     }
 
+    public function getShowNumberAttribute()
+    {   
+        switch ($this->status) {
+            case 'onhold':
+                return false;
+                break;
+            case 'in transit':
+                return true;
+                break;
+            case 'picked up':
+                return true;
+                break;
+            default:
+                return false;
+                break;
+        }
+    }
+
     public function getStatusMessageAttribute()
     {   
         switch ($this->status) {
@@ -79,11 +97,22 @@ class Delivery extends Model
      public static function boot() {
         parent::boot();
         static::creating (function($delivery){   
+<<<<<<< HEAD
             $delivery->tracking_number = random_int(111, 999).random_int(111, 999).'WS'; 
         });
 
         static::saved (function($delivery){  
             //Mail::to($delivery->email)->send(new DeliveryMail($delivery));
+=======
+            $delivery->tracking_number = random_int(111, 999).random_int(111, 999).'WS';
+            Mail::to($delivery->email)->send(new DeliveryMail($delivery)); 
+        });
+
+        static::updated (function($delivery){ 
+            if($delivery->wasChanged('status')){
+                Mail::to($delivery->email)->send(new DeliveryMail($delivery));
+            }
+>>>>>>> 6559f023fb70f593eb97f68242096e8ea3b2acdd
         });
     }
 }
