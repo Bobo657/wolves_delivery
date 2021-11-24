@@ -79,11 +79,11 @@ class Delivery extends Model
      public static function boot() {
         parent::boot();
         static::creating (function($delivery){   
-            $delivery->tracking_number = random_int(111, 999).random_int(111, 999).WS; 
+            $delivery->tracking_number = random_int(111, 999).random_int(111, 999).'WS'; 
         });
 
         static::saved (function($delivery){  
-            Mail::to($delivery->email)->send(new DeliveryMail($delivery));
+            //Mail::to($delivery->email)->send(new DeliveryMail($delivery));
         });
     }
 }
